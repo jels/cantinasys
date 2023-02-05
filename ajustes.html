@@ -145,6 +145,11 @@
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li style="width: 100px">
+                                    <button type="button" class="btn btn-block btn-info" data-toggle="modal"
+                                        data-target="#limitarSaldo">Limitar $</button>
+                                </li>
+                                <li style="width: 10px"></li>
+                                <li style="width: 100px">
                                     <button type="button" class="btn btn-block btn-success" data-toggle="modal"
                                         data-target="#desbloquearProducto">Activar</button>
                                 </li>
@@ -156,6 +161,11 @@
                             </ol>
                         </div>
                     </div><!-- /.row -->
+                    <div class="card card-warning">
+                        <div class="card-header">
+                            <h1 class="card-title">Monto Actual: <span style="color: red;">75.000</span>Gs</h1>
+                        </div>
+                    </div>
                 </div><!-- /.container-fluid -->
             </div>
             <!-- /.content-header -->
@@ -271,6 +281,34 @@
                     <!-- /.modal-dialog -->
                 </div>
                 <!-- /.modal -->
+                <div class="modal fade" id="limitarSaldo">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Limitar monto máximo</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <h3>Monto Actual: <code>75.000</code>Gs</h3>
+                                <div class="form-group">
+                                    <label for="exampleInputBorderWidth2">Monto Máximno
+                                        <code>* Establecer el monto máximo</code></label>
+                                    <input type="number" class="form-control form-control-border border-width-2"
+                                        id="exampleInputBorderWidth2" placeholder="ej: 10000">
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success">Actualizar</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
                 <div class="modal fade" id="bloquearProducto">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -283,16 +321,17 @@
                             <div class="modal-body">
                                 <div class="form-group">
                                     <label for="exampleSelectBorderWidth2">Ver Lista</label>
-                                    <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
-                                      <option>Seleccionar</option>
-                                      <option>Producto 1</option>
-                                      <option>Producto 2</option>
-                                      <option>Producto 3</option>
-                                      <option>Producto 4</option>
-                                      <option>Producto 5</option>
-                                      <option>Producto 6</option>
+                                    <select class="custom-select form-control-border border-width-2"
+                                        id="exampleSelectBorderWidth2">
+                                        <option>Seleccionar</option>
+                                        <option>Producto 1</option>
+                                        <option>Producto 2</option>
+                                        <option>Producto 3</option>
+                                        <option>Producto 4</option>
+                                        <option>Producto 5</option>
+                                        <option>Producto 6</option>
                                     </select>
-                                  </div>
+                                </div>
                             </div>
                             <div class="modal-footer justify-content-between">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
@@ -316,16 +355,17 @@
                             <div class="modal-body">
                                 <div class="form-group">
                                     <label for="exampleSelectBorderWidth2">Ver Lista</label>
-                                    <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
-                                      <option>Seleccionar</option>
-                                      <option>Producto 1</option>
-                                      <option>Producto 2</option>
-                                      <option>Producto 3</option>
-                                      <option>Producto 4</option>
-                                      <option>Producto 5</option>
-                                      <option>Producto 6</option>
+                                    <select class="custom-select form-control-border border-width-2"
+                                        id="exampleSelectBorderWidth2">
+                                        <option>Seleccionar</option>
+                                        <option>Producto 1</option>
+                                        <option>Producto 2</option>
+                                        <option>Producto 3</option>
+                                        <option>Producto 4</option>
+                                        <option>Producto 5</option>
+                                        <option>Producto 6</option>
                                     </select>
-                                  </div>
+                                </div>
                             </div>
                             <div class="modal-footer justify-content-between">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
