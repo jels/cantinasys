@@ -114,7 +114,7 @@
                             <a href="saldo.html" class="nav-link">
                                 <i class="nav-icon fas fa-donate"></i>
                                 <p>
-                                    Compras
+                                    Saldo
                                 </p>
                             </a>
                         </li>
@@ -140,7 +140,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Inicio</h1>
+                            <h1 class="m-0">Ajustes</h1>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -152,73 +152,108 @@
                 <div class="container-fluid">
                     <!-- Small boxes (Stat box) -->
                     <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-info">
-                                <div class="inner">
-                                    <h3>50.000 Gs</h3>
-
-                                    <p>Saldo</p>
+                        <!-- left column -->
+                        <div class="col-md-6">
+                            <!-- general form elements -->
+                            <div class="card card-success">
+                                <div class="card-header">
+                                    <h3 class="card-title">Lista de productos Permitidos</h3>
                                 </div>
-                                <div class="icon">
-                                    <i class="fas fa-donate"></i>
+                                <!-- /.card-header -->
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">#</th>
+                                                <th>Producto</th>
+                                                <th  style="width: 40px">Imagen</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td>Alfajor de Chocolate</td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
+                                                    <i class="nav-icon far fa-image"></i>
+                                                </a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.</td>
+                                                <td>Pastafrolla</td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
+                                                    <i class="nav-icon far fa-image"></i>
+                                                </a></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <a href="saldo.html" class="small-box-footer">Más Información<i
-                                        class="fas fa-arrow-circle-right"></i></a>
+                                <!-- /.card-body -->
                             </div>
+                            <!-- /.card -->
                         </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-success">
-                                <div class="inner">
-                                    <h3>10</h3>
-
-                                    <p>Consumo Semanal</p>
+                        <!--/.col (left) -->
+                        <!-- right column -->
+                        <div class="col-md-6">
+                            <!-- Form Element sizes -->
+                            <div class="card card-danger">
+                                <div class="card-header">
+                                    <h3 class="card-title">Lista de productos Bloqueados</h3>
                                 </div>
-                                <div class="icon">
-                                    <i class="fas fa-shopping-cart"></i>
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 10px">#</th>
+                                                <th>Producto</th>
+                                                <th  style="width: 40px">Imagen</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td>Jugo de naranja</td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
+                                                    <i class="nav-icon far fa-image"></i>
+                                                </a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2.</td>
+                                                <td>Helado de Chocolate</td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
+                                                    <i class="nav-icon far fa-image"></i>
+                                                </a></td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <a href="consumo.html" class="small-box-footer">Más Información<i
-                                        class="fas fa-arrow-circle-right"></i></a>
+                                <!-- /.card-body -->
                             </div>
+                            <!-- /.card -->
                         </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-danger">
-                                <div class="inner">
-                                    <h3>25</h3>
-
-                                    <p>Productos Bloqueados</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-tag"></i>
-                                </div>
-                                <a href="productos.html" class="small-box-footer">Más Información<i
-                                        class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
-                        <div class="col-lg-3 col-6">
-                            <!-- small box -->
-                            <div class="small-box bg-info">
-                                <div class="inner">
-                                    <h3>3</h3>
-
-                                    <p>Ajustes Realizados</p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fas fa-cog"></i>
-                                </div>
-                                <a href="ajustes.html" class="small-box-footer">Más Información<i
-                                        class="fas fa-arrow-circle-right"></i></a>
-                            </div>
-                        </div>
-                        <!-- ./col -->
+                        <!--/.col (right) -->
                     </div>
                     <!-- /.row -->
                 </div><!-- /.container-fluid -->
+                <div class="modal fade" id="modal-default">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="modal-title">Imagen del producto</h4>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid pad" src="dist/img/photo2.png" alt="Photo">
+                        </div>
+                      </div>
+                      <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
             </section>
             <!-- /.content -->
         </div>
@@ -227,7 +262,7 @@
             <strong>Copyright &copy; 2023. </strong>
             All rights reserved. by <strong>Lion.net</strong>
             <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 0.0.1.BETA 
+                <b>Version</b> 0.0.1.BETA
             </div>
         </footer>
 
