@@ -142,6 +142,19 @@
                         <div class="col-sm-6">
                             <h1 class="m-0">Ajustes</h1>
                         </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li style="width: 100px">
+                                    <button type="button" class="btn btn-block btn-success" data-toggle="modal"
+                                        data-target="#desbloquearProducto">Activar</button>
+                                </li>
+                                <li style="width: 10px"></li>
+                                <li style="width: 100px">
+                                    <button type="button" class="btn btn-block btn-danger" data-toggle="modal"
+                                        data-target="#bloquearProducto">Bloquear</button>
+                                </li>
+                            </ol>
+                        </div>
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
             </div>
@@ -166,25 +179,27 @@
                                             <tr>
                                                 <th style="width: 10px">#</th>
                                                 <th>Producto</th>
-                                                <th  style="width: 40px">Imagen</th>
+                                                <th style="width: 40px">Imagen</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1.</td>
                                                 <td>Alfajor de Chocolate</td>
-                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
-                                                    <i class="nav-icon far fa-image"></i>
-                                                </a></td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal"
+                                                        data-target="#modal-default">
+                                                        <i class="nav-icon far fa-image"></i>
+                                                    </a></td>
                                             </tr>
                                             <tr>
                                                 <td>2.</td>
                                                 <td>Pastafrolla</td>
-                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
-                                                    <i class="nav-icon far fa-image"></i>
-                                                </a></td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal"
+                                                        data-target="#modal-default">
+                                                        <i class="nav-icon far fa-image"></i>
+                                                    </a></td>
                                             </tr>
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -206,25 +221,27 @@
                                             <tr>
                                                 <th style="width: 10px">#</th>
                                                 <th>Producto</th>
-                                                <th  style="width: 40px">Imagen</th>
+                                                <th style="width: 40px">Imagen</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td>1.</td>
                                                 <td>Jugo de naranja</td>
-                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
-                                                    <i class="nav-icon far fa-image"></i>
-                                                </a></td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal"
+                                                        data-target="#modal-default">
+                                                        <i class="nav-icon far fa-image"></i>
+                                                    </a></td>
                                             </tr>
                                             <tr>
                                                 <td>2.</td>
                                                 <td>Helado de Chocolate</td>
-                                                <td><a href="#" class="nav-link" data-toggle="modal" data-target="#modal-default">
-                                                    <i class="nav-icon far fa-image"></i>
-                                                </a></td>
+                                                <td><a href="#" class="nav-link" data-toggle="modal"
+                                                        data-target="#modal-default">
+                                                        <i class="nav-icon far fa-image"></i>
+                                                    </a></td>
                                             </tr>
-                                            
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -238,22 +255,89 @@
                 </div><!-- /.container-fluid -->
                 <div class="modal fade" id="modal-default">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h4 class="modal-title">Imagen del producto</h4>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Imagen del producto</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img class="img-fluid pad" src="dist/img/photo2.png" alt="Photo">
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <img class="img-fluid pad" src="dist/img/photo2.png" alt="Photo">
-                        </div>
-                      </div>
-                      <!-- /.modal-content -->
+                        <!-- /.modal-content -->
                     </div>
                     <!-- /.modal-dialog -->
-                  </div>
-                  <!-- /.modal -->
+                </div>
+                <!-- /.modal -->
+                <div class="modal fade" id="bloquearProducto">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Lista completa de productos</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="exampleSelectBorderWidth2">Ver Lista</label>
+                                    <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
+                                      <option>Seleccionar</option>
+                                      <option>Producto 1</option>
+                                      <option>Producto 2</option>
+                                      <option>Producto 3</option>
+                                      <option>Producto 4</option>
+                                      <option>Producto 5</option>
+                                      <option>Producto 6</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-danger">Bloquear</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+                <div class="modal fade" id="desbloquearProducto">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Lista completa de productos Bloqueados</h4>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="exampleSelectBorderWidth2">Ver Lista</label>
+                                    <select class="custom-select form-control-border border-width-2" id="exampleSelectBorderWidth2">
+                                      <option>Seleccionar</option>
+                                      <option>Producto 1</option>
+                                      <option>Producto 2</option>
+                                      <option>Producto 3</option>
+                                      <option>Producto 4</option>
+                                      <option>Producto 5</option>
+                                      <option>Producto 6</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success">Desbloquear</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- /.modal -->
+
             </section>
             <!-- /.content -->
         </div>
